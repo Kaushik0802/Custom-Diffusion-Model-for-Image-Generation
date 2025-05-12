@@ -22,7 +22,7 @@ st.title("Generating Images Using a Diffusion Model")
 option = st.radio('Choose a model:', ('Model without Attention', 'Model with Attention'))
 if option == 'Model without Attention':
     model = KaushikUnet()
-    model.load_state_dict(torch.load("new_linear_model_1090.pt", map_location=torch.device('cpu')))
+    model.load_state_dict(torch.load("new_linear_model_1090.pt", map_location=torch.device('cpu'))) #   Change the model when required (find the model name in the training_pipeline.py file or in the main root foldr)
     st.write("Model without attention is initialized.")
 
 elif option == 'Model with Attention':
@@ -31,7 +31,7 @@ elif option == 'Model with Attention':
         channels=3,
         dim_mults=(1, 2, 4,)
     )
-    model.load_state_dict(torch.load("model_400pt", map_location=torch.device('cpu')))
+    model.load_state_dict(torch.load("model_400pt", map_location=torch.device('cpu'))) #Change the model when required (find the model name in the training_pipeline.py file or in the main root foldr)
     st.write("Model with Attention is initialized.")
 
 model.to(device)
