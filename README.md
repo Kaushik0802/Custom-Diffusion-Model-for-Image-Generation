@@ -23,9 +23,10 @@ kaushik_diffusion_project/
 ├── requirements.txt          # Dependencies
 ├── README.md                 # You're reading it
 └── Notebooks/                # Jupyter development logs and visuals
+│   ├── Unconditional_Image_Generation_Using_Diffusion_Models.ipynb       # Jupyter development logs and visuals
+│   ├── Unconditional_Image_Generation_using_Diffusion_Models_v2_0.ipynb  # Jupyter development logs and visuals
+│   ├── autoencoder_on_a_huggingface_dataset.ipynb                        # Jupyter development logs and visuals
 
-After running streamlit
---> generated output/         #consists of all 60 generated images
 
 ```
 
