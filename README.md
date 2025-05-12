@@ -20,6 +20,7 @@ kaushik_diffusion_project/
 ├── setup_env.py              # Central import + device setup
 ├── model_400pt               # Trained model with attention
 ├── new_linear_model_1090.pt  # Trained baseline model
+├── plot_curves_plot.py       # Plot loss curves 
 ├── requirements.txt          # Dependencies
 ├── README.md                 # You're reading it
 └── Notebooks/                # Jupyter development logs and visuals
@@ -71,3 +72,14 @@ Use these for documenting your experimentation or showcasing model interpretabil
 | sampling_loop.py  | Reconstructs images from noise during inference |
 | main_interface.py | UI to toggle between models and visualize outputs |
 | image_utils.py    | Preprocessing steps and image display helpers |
+
+## If trained from scratch:
+  Step 1: Install requirments.txt
+  Step 2: Setup config in training_pipeline.py, main_interface.py according to your needs. The switch between the two models training can be seen in training_pipeline.py
+  Step 3: Run training_pipeline.py
+  Step 4: Verify the loss logs and Loss_csv being generated
+  Step 5: Run plotting code to obtain plots
+  Step 6: Choose your desired model by renaming them in the main_interface.py (#comments available in file to guide)
+  Step 7: Run Streamlit app
+  Step 8: Choose a model 
+  Step 9: View results
