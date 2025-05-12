@@ -13,7 +13,7 @@ import csv
 
 # ==================== Config ====================
 use_advanced_unet = True  # Toggle here: True for Advanced, False for Baseline
-epochs = 25
+epochs = 25 #set it to 100. 25 epochs for efficiency on cpu
 lr = 0.001
 
 # ==================== Model ====================
